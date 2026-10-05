@@ -1,0 +1,33 @@
+if – egyszer ellenőrzi a feltételt
+n <- 1
+
+if(n <= 3){
+  print(n)
+  n <- n + 1
+}
+Eredmény:
+[1] 1
+Az if megnézi:
+n <= 3 igaz?
+Igen → lefuttatja a blokkot egyszer, majd kész.
+while – addig ismétli, amíg igaz a feltétel
+n <- 1
+
+while(n <= 3){
+  print(n)
+  n <- n + 1
+}
+Eredmény:
+[1] 1
+[1] 2
+[1] 3
+
+if → ha igaz a feltétel, csináld meg egyszer.
+while → amíg igaz a feltétel, ismételd.
+for → minden megadott értékre hajtsd végre.
+
+A for pedig akkor jó, amikor előre tudjuk, hogy milyen értékeken akarunk végigmenni.
+
+for(n in 1:3){
+  print(n)
+}
