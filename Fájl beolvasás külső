@@ -1,0 +1,1 @@
+titanic=data.frame(read.table("https://raw.githubusercontent.com/evoly0x0/r/main/titanic.csv",header=T,sep=":"))
