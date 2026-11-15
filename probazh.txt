@@ -1,0 +1,44 @@
+1. [2 pont] Készítsünk v1 néven egy vektort, ami 120-tól 150-ig tartalmazza az egész számokat!
+2. (3 pont) Hozz létre egy vektort v2 néven, mely az 1 és 100 közötti, 2-vel osztható számok köbgyökét tartalmazza.
+3. (2 pont)Hozz létre egy olyan 3×3-as mátrixot, melyben az első sor minden eleme 2, a második sor minden eleme 0, a harmadik sor minden eleme pedig 7!
+
+4. Titanic adattábla (12 pont)
+(a) (2 pont) Olvasd be a titanic.csv fájlt titanic néven. A szeparátor a kettőspont (:), az első sor oszlopneveket tartalmaz.
+(b)(2 pont) Hány 20 és 70 év közötti nő utazott a hajón?
+(c) (4 pont) Számítsd ki a 3. osztály női utasainak átlagéletkorát. A hiányzó életkorokat hagyd ki.
+(d)(4 pont )Add meg, a másodosztályon utazó 20 és 70 év közötti nők átlagéletkorát.A hiányzó életkorokat hagyd ki.
+
+5. (10pont) Írj Csucs nevű függvényt, amely egy vektor belső elemei közül kiválasztja azokat, amelyek nagyobbak az őket közvetlenül megelőző és követő elemnél is.
+
+A vektor első és utolsó elemét nem kell vizsgálni.
+
+Példa bemenet:
+c(1, 5, 3, 7, 2, 4, 6, 1)
+
+Példa kimenet:
+c(5, 7, 6)
+
+6. (12pont) Tekintsünk egy pozitív egész számokból álló sorozatot, amelyet a következő szabály szerint képzünk:
+- Ha az aktuális szám páros, akkor megfelezzük.
+- Ha páratlan és nagyobb 10-nél, akkor kivonunk belőle 3-at.
+- Ha páratlan és legfeljebb 10, akkor kivonunk belőle 1-et.
+A sorozat akkor áll meg, amikor elérjük az 1-et.
+
+Írj Sorozat nevű függvényt, amely egy bemenetként megadott pozitív egész számból kiindulva kiírja a sorozat elemeit!
+
+Ha a bemenet nem pozitív vagy nem egész szám, a függvény írja ki: „A bemenet nem megfelelő!”
+
+Példa bemenet: -3
+Példa kimenet: A bemenet nem megfelelő!
+
+Példa bemenet: 2.5
+Példa kimenet: A bemenet nem megfelelő!
+
+Példa bemenet: 19
+Példa kimenet: (19, 16, 8, 4, 2, 1)
+
+7. [4pont] Egy raktárban téglatest alakú dobozokat használnak. A csomagolóanyag mennyiségét a doboz teljes külső felülete alapján határozzák meg, a tároláshoz pedig tudni szeretnék, hogy mekkora tér fér el benne. A doboz falának vastagságától tekintsünk el.
+
+Írj aruszallitas nevű függvényt, amely a doboz három élének hosszát kapja meg, majd kiírja a szükséges csomagolóanyag mennyiségét és a tárolási kapacitást!
+
+Határozd meg az eredményeket egy olyan dobozra, amelynek élei 2, 3 és 4 egység hosszúak!
