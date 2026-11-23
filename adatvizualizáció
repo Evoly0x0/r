@@ -1,0 +1,72 @@
+Heat Map
+----------------------
+data <- matrix(rnorm(25, 0, 5), nrow = 5, ncol = 5)
+
+colnames(data) <- paste0("col", 1:5)
+rownames(data) <- paste0("row", 1:5)
+
+heatmap(data)
+
+--------------------
+
+
+Map visualization
+--------------
+install.packages("maps")
+library(maps)
+map(database = "world")
+
+df <- data.frame(
+  city = c("New York", "Los Angeles", "Chicago", "Houston", "Phoenix"),
+  lat = c(40.7128, 34.0522, 41.8781, 29.7604, 33.4484),
+  lng = c(-74.0060, -118.2437, -87.6298, -95.3698, -112.0740)
+)
+
+points(x = df$lng, y = df$lat, col = "Red")
+
+
+-----------------------------
+3D Graphs
+---------------
+
+cone <- function(x, y){
+sqrt(x ^ 2 + y ^ 2)
+}
+  
+x <- y <- seq(-1, 1, length = 30)
+z <- outer(x, y, cone)
+  
+persp(x, y, z,
+      main="Perspective Plot of a Cone",
+      zlab = "Height",
+      theta = 30, phi = 15,
+      col = "orange", shade = 0.4
+      )
+
+-----------------------------------------
+install.packages("leaflet")
+
+
+library(leaflet)
+
+# Note: if you do not already installed it, install it with:
+# install.packages("leaflet")
+
+# Background 1: NASA
+m <- leaflet() %>% 
+   addTiles() %>% 
+   setView( lng = 2.34, lat = 48.85, zoom = 5 ) %>% 
+   addProviderTiles("NASAGIBS.ViirsEarthAtNight2012")
+m
+ 
+# Background 2: World Imagery
+m <- leaflet() %>% 
+   addTiles() %>% 
+   setView( lng = 2.34, lat = 48.85, zoom = 3 ) %>% 
+   addProviderTiles("Esri.WorldImagery")
+m
+
+
+-----------------------------------
+
+https://r-graph-gallery.com/297-circular-barplot-with-groups.html
